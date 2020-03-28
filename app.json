@@ -1,14 +1,41 @@
 {
   "pages": [
+    "pages/street/street",
+    "pages/home/home",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "扯咸片",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f5f6fa"
   },
-  "style": "v2",
+  "tabBar": {
+    "color": "#888",
+    "selectedColor": "#ffd500",
+    "backgroundColor": "#fefefe",
+    "list": [
+      {
+        "text": "咸片区",
+        "pagePath": "pages/home/home",
+        "iconPath": "images/tab_icon03.png",
+        "selectedIconPath": "images/tab_icon03_cur.png"
+      },
+      {
+        "text": "咸娱街",
+        "pagePath": "pages/street/street",
+        "iconPath": "images/tab_icon02.png",
+        "selectedIconPath": "images/tab_icon02_cur.png"
+      },
+      {
+        "text": "咸sir",
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/tab_icon01.png",
+        "selectedIconPath": "images/tab_icon01_cur.png"
+      }
+    ]
+  },
   "sitemapLocation": "sitemap.json"
 }

@@ -1,0 +1,76 @@
+/* pages/street/street.wxss */
+.street_nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  background-color: #ffd500;
+  box-shadow: 0 4px 8px 0 #005cf90d;
+  z-index: 100;
+}
+.street_nav_item {
+  width: 20%;
+  font-size: 36rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #666;
+}
+.street_nav_item-cur {
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 6rpx solid #fff1aa;
+}
+.street_list {
+  margin: 120rpx 15rpx 0;
+}
+.street_item {
+  min-height: 100rpx;
+  margin-bottom: 15rpx;
+  padding: 20rpx;
+  font-size: 30rpx;
+  line-height: 46rpx;
+  border-radius: 2px;
+  color: #55585c;
+  background-color: #fff;
+  box-shadow: 0 2px 10px 0 #005cf90d;
+}
+
+.bottom-lodaing {
+  height: 120rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #ccc;
+  font-size: 28rpx;
+}
+
+.street_item-img {
+  width: 100%;
+  height: 350rpx;
+  margin-top: 20rpx;
+}
+.street_item-video {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.author_info {
+  height: 40rpx;
+  margin-top: 20rpx;
+  padding-top: 20rpx;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  color: #ccc;
+  border-top: 1rpx solid #f2f3ff;
+}
+.author_info image {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 100%;
+  float: left;
+}
+.author_info-name {
+  margin-left: 10rpx;
+  float: left;
+}
+

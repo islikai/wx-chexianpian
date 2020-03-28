@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "咸娱街",
+  "onReachBottomDistance": 0,
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

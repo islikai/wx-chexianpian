@@ -1,0 +1,56 @@
+<view class="street-content">
+  <!-- 绑定事件只能绑定事件名称，参数可以通过自定义属性传参 -->
+  <view class="street_nav">
+    <view
+      wx:for="{{navList}}"
+      wx:key="item.id"
+      class="street_nav_item {{curId === item.id && 'street_nav_item-cur'}}"
+      bindtap="onChangeNav"
+      data-id="{{item.id}}"
+    >
+      {{item.title}}
+    </view>
+  </view>
+  <view class="street_list">
+    <view class="street_item"  wx:for="{{list}}"  wx:key="item.sid">
+      <!-- 文字 -->
+      <text>{{item.text}}</text>
+      <!-- 图片 -->
+      <image
+        class="street_item-img"
+        src="{{item.images}}"
+        lazy-load
+        mode="aspectFill"
+        wx:if="{{item.type === 'image'}}"
+        bindtap="previewImg"
+        data-url="{{item.images}}"
+      />
+      <!-- GIF动图 -->
+      <image
+        class="street_item-img"
+        src="{{item.thumbnail}}"
+        lazy-load
+        mode="aspectFill"
+        wx:if="{{item.type === 'gif'}}"
+        bindtap="previewImg"
+        data-url="{{item.images}}"
+      />
+      <video
+        class="street_item-video"
+        src="{{item.video}}"
+        controls
+        enable-play-gesture
+        show-mute-btn
+        wx:if="{{item.type === 'video'}}"
+        id="video_{{item.sid}}"
+        bindplay="videoPlay"
+      >
+      </video>
+      <view class="author_info">
+        <image src="{{item.header}}" />
+        <text class="author_info-name">{{item.name}}</text>
+      </view>
+    </view>
+    <view class="bottom-lodaing">上拉加载更多...</view>
+  </view>
+</view>

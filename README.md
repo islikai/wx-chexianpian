@@ -1,2 +1,0 @@
-# wx-chexianpian
-wx-chexianpian

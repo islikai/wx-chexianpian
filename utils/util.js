@@ -14,6 +14,29 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+/**
+ * 
+ * @param {*} 请求方法 
+ */
+const fetch = (url, data) => {
+  return new Promise((resolve, reject) => {
+    wx.request({
+      url,
+      data,
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        resolve(res.data);
+      },
+      fail(err) {
+        reject(err);
+      }
+    })
+  })
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime,
+  fetch,
 }

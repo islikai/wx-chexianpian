@@ -10,14 +10,12 @@
 		"minified": true,
 		"newFeature": true,
 		"autoAudits": false,
-		"coverView": true,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false
+		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.10.2",
+	"libVersion": "2.7.7",
 	"appid": "wxf0bddc44cc29e4b7",
-	"projectname": "wx-chexianpian",
+	"projectname": "cxp",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
