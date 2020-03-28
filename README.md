@@ -1,6 +1,7 @@
-# 微信小程序
+# wx-chexianpian
+微信小程序
 
-> wx-chexianpian
+### 预览
 
 ![image](https://github.com/islikai/wx-chexianpian/blob/master/images/home-min.jpg)
 
